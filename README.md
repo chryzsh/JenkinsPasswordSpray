@@ -1,5 +1,5 @@
 # JenkinsPasswordSpray
-JenkinsPasswordSpray is a tool witten i PowerShell to perform password spraying attacks against users of a [Jenkins](https://jenkins.io/) instance. Be careful not to lock out accounts!
+JenkinsPasswordSpray is a tool witten in PowerShell to perform password spraying attacks against users of a [Jenkins](https://jenkins.io/) instance. Be careful not to lock out accounts!
 
 ## Quick Start Guide
 Open a PowerShell terminal from the Windows command line with `powershell.exe -exec bypass` and import the module with `Import-Module JenkinsPasswordSpray.ps1`.
@@ -53,4 +53,4 @@ Force             - Forces the spray to continue without prompting for confirmat
 OutFile           - A file to output the results to.
 ```
 
-Please fill free to file issues or pull requests. You can also write to me on Twitter [@chryzsh](https://twitter.com/chryzsh)
+Please feel free to file issues or pull requests. You can also write to me on Twitter [@chryzsh](https://twitter.com/chryzsh)
