@@ -41,9 +41,6 @@ Do you want to use the URL http://10.0.0.7:8080 instead?
 [*] Any passwords that were successfully sprayed have been written to jenkins-sprayed.txt
 ```
 
-
-
-
 ### Invoke-JenkinsPasswordSpray Options
 
 ```
@@ -55,3 +52,5 @@ ContinueOnSuccess - Continue spraying, even if a valid account is found.
 Force             - Forces the spray to continue without prompting for confirmation.
 OutFile           - A file to output the results to.
 ```
+
+Please fill free to file issues or pull requests. You can also write to me on Twitter [@chryzsh](https://twitter.com/chryzsh)
