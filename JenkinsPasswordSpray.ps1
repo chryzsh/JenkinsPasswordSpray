@@ -257,7 +257,7 @@ Function Invoke-JenkinsPasswordSpray {
         # Set the URL to use to the provided URL
         $URLToUse = $URL
 
-        if($URLTrailingElements) {
+        if ($URLTrailingElements) {
             Write-Host "[-] Detected trailing elements " -ForegroundColor Yellow -NoNewline
             Write-Host $URLTrailingElements -ForegroundColor Cyan -NoNewline
             Write-Host " in provided URL " -ForegroundColor Yellow -NoNewline
@@ -370,7 +370,7 @@ Function Invoke-JenkinsPasswordSpray {
         # If no force flag is set, ask the user for confirmation
         if (!$Force) {
             $title = "Confirm Password Spray"
-            $message = "Are you sure you want to password spray the URL " + $URLToUse + " with "  + $UsernameCount + " accounts and " + $PasswordCount + " passwords?"
+            $message = "Are you sure you want to password spray the URL " + $URLToUse + " with " + $UsernameCount + " accounts and " + $PasswordCount + " passwords?"
             $yes = New-Object System.Management.Automation.Host.ChoiceDescription "&Yes", `
                 "Attempts to authenticate 1 time per user in the list for each password in the passwords file."
     
