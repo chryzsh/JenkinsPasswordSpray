@@ -4,9 +4,9 @@ JenkinsPasswordSpray is a tool witten in PowerShell to perform password spraying
 ## Quick Start Guide
 Open a PowerShell terminal from the Windows command line with `powershell.exe -exec bypass` and import the module with `Import-Module JenkinsPasswordSpray.ps1`.
 
-The required options are `URL`, `Username`/`UsernameFile` and `Password`/`PasswordFile`.
+The mandatory parameters are `-URL`, `-Username`/`-UsernameFile` and `-Password`/`-PasswordFile`.
 
-The following command will spray against a list of users and attempt to authenticate using each username and a password from the specified list. If a valid login is found, the script will stop unless `-ContinueOnSuccess` is set to `$True`. A confirmation will be prompted unless the `-Force` switch is set. The results of the spray will be output to a file called `sprayed-jenkins.txt`
+The following command will spray against a list of users and attempt to authenticate using each username and a password from the specified list. If a valid login is found, the script will stop unless `-ContinueOnSuccess` is set to `$True`. A confirmation will be prompted unless the `-Force` parameter is set. The results of the spray will be output to a file called `sprayed-jenkins.txt`
 
 The script will also try to help you clean up your URL if it's invalid or contains trailing elements like `/login`, as this will make the URL invalid for password spraying. But because your target Jenkins instance might be located in a subdirectory, this feature asks for confirmation before trimming the URL.
 
@@ -41,16 +41,16 @@ Do you want to use the URL http://10.0.0.7:8080 instead?
 [*] Any passwords that were successfully sprayed have been written to jenkins-sprayed.txt
 ```
 
-### Invoke-JenkinsPasswordSpray Options
+### Invoke-JenkinsPasswordSpray Parameters
 
 ```
-UsernameList      - A list of usernames to spray
-Username          - A single username to spray.
-Password          - A single password to spray for each specified username.
-PasswordList      - A list of passwords, one per line, to use for the password spray.
-ContinueOnSuccess - Continue spraying, even if a valid account is found.
-Force             - Forces the spray to continue without prompting for confirmation.
-OutFile           - A file to output the results to.
+-UsernameList      - A list of usernames to spray
+-Username          - A single username to spray.
+-Password          - A single password to spray for each specified username.
+-PasswordList      - A list of passwords, one per line, to use for the password spray.
+-ContinueOnSuccess - Continue spraying, even if a valid account is found.
+-Force             - Forces the spray to continue without prompting for confirmation.
+-OutFile           - A file to output the results to.
 ```
 
 Please feel free to file issues or pull requests. You can also write to me on Twitter [@chryzsh](https://twitter.com/chryzsh)
